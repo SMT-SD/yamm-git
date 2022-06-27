@@ -1,0 +1,890 @@
+/* [Master Stylesheet] */
+
+/* ----------------------------------------------------------
+    :: Template 
+    :: Author: SMT
+    :: Author URL:www.smt.sa 
+    :: Version: 1.0
+    :: Created: 02 2022
+    :: Last Updated: 02 2022
+    ---------------------------------------------------------- */
+
+/* -------------------------------------------------
+    ============ PLACE YOUR CUSTOM CSS HERE ============
+    ------------------------------------------------- */
+
+/*start my style */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Almarai', sans-serif;
+    overflow-x: hidden;
+    position: relative;
+    direction: rtl;
+}
+
+a {
+    text-decoration: none !important;
+    outline: none;
+}
+
+.mt-5 {
+    margin-top: 5px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.section-padding {
+    padding: 60px 0;
+}
+
+.transition {
+    transition: all ease-in-out 0.3s;
+}
+
+$mainColor: #CC299A;
+$secColor: #FAAD4F;
+$thirdColor: #81499D;
+
+// start intro
+
+.intro {
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    overflow-x: hidden;
+
+    // start navbar
+    nav {
+        background: transparent;
+        position: fixed;
+        left: 0;
+        right: 0;
+        z-index: 10001;
+
+        img.logo {
+            width: 100px;
+        }
+
+        .nav-link {
+            color: $mainColor !important;
+            @extend .transition;
+
+            &:hover {
+                color: $secColor !important;
+            }
+        }
+
+        button {
+            background: transparent;
+            color: #fff;
+            border: 2px solid $mainColor;
+            border-radius: 25px;
+            padding: .4rem 2rem;
+            @extend .transition;
+
+            &:hover {
+                background: $mainColor;
+            }
+
+
+        }
+
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .bg-one {
+        position: absolute;
+        left: -30%;
+        width: 700px;
+        top: 50px;
+        z-index: -1;
+    }
+
+    .bg-two {
+        position: absolute;
+        right: -29%;
+        width: 600px;
+        top: 400px;
+        z-index: -1;
+    }
+
+    .carousel {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        height: 100vh;
+
+        .carousel-item {
+            h1 {
+                color: #81499D;
+                font-size: 44px;
+                font-weight: 600;
+                line-height: 1.6;
+                margin-bottom: 30px;
+            }
+
+            p {
+                color: #3B3B3D;
+                width: 50%;
+                line-height: 1.8;
+                font-size: 18px;
+                margin-bottom: 40px;
+            }
+
+            button {
+                background: url('../images/bg/btn.png');
+                color: #fff;
+                background-position: center center;
+                background-size: cover;
+                border: none;
+                outline: none;
+                width: 250px;
+                height: 50px;
+                font-size: 18px;
+                font-weight: 600;
+                margin-right: 0;
+                @extend .transition;
+
+                &:hover {
+                    margin-right: 20px;
+                }
+            }
+
+        }
+
+        .carousel-indicators {
+            flex-direction: column;
+            margin-right: -30px;
+            bottom: 36%;
+
+        }
+
+        .carousel-indicators [data-bs-target] {
+            background: $secColor;
+            width: 7px;
+            height: 20px;
+            opacity: .3;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+
+        .carousel-indicators .active {
+            opacity: 1 !important;
+        }
+
+
+    }
+
+    .tickets {
+        padding-top: 140px;
+
+        h2 {
+            color: $mainColor;
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        h4 {
+            color: $thirdColor;
+            font-size: 22px;
+        }
+
+        ul {
+            margin-top: 30px;
+
+            li {
+                margin-left: 100px;
+                font-size: 18px;
+                color: #3B3B3D;
+
+                &::before {
+                    content: '';
+                    width: 20px;
+                    height: 20px;
+                    display: inline-block;
+                    background: $mainColor;
+                    margin-left: 10px;
+                }
+            }
+
+
+        }
+    }
+
+}
+
+// end intro
+
+// start orgnize
+.orgnize {
+    padding: 120px 0;
+    padding-bottom: 0px;
+    padding-top: 200px;
+
+    h2 {
+        color: $mainColor;
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    h4 {
+        color: $secColor;
+        font-size: 22px;
+    }
+
+    ul {
+        margin-top: 40px;
+
+        li {
+            margin-left: 100px;
+            font-size: 18px;
+            color: #3B3B3D;
+            margin-bottom: 15px;
+            margin-top: 15px;
+
+            &::before {
+                content: '';
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+                background: $mainColor;
+                margin-left: 10px;
+            }
+        }
+
+
+    }
+
+    img {
+        margin-top: -200px;
+    }
+}
+
+// end orgnize
+
+
+// start control
+.control {
+    padding: 120px 0;
+    padding-top: 160px;
+    padding-bottom: 30px;
+
+    h2 {
+        color: $mainColor;
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    h4 {
+        color: $secColor;
+        font-size: 22px;
+    }
+
+    ul {
+        margin-top: 40px;
+
+        li {
+            margin-left: 100px;
+            font-size: 18px;
+            color: #3B3B3D;
+            margin-bottom: 15px;
+            margin-top: 15px;
+
+            &::before {
+                content: '';
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+                background: $mainColor;
+                margin-left: 10px;
+            }
+        }
+
+
+    }
+
+    img {
+        margin-top: -230px;
+    }
+}
+
+// end control
+
+// start easy
+.easy {
+    padding-top: 100px;
+
+    h2 {
+        color: $mainColor;
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    ul {
+        margin-top: 40px;
+
+        li {
+            margin-left: 100px;
+            font-size: 18px;
+            color: #3B3B3D;
+            margin-bottom: 15px;
+            margin-top: 15px;
+            width: 300px;
+
+            &::before {
+                content: '';
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+                background: $mainColor;
+                margin-left: 10px;
+            }
+        }
+
+
+    }
+}
+
+// end easy
+
+
+// start contact
+.contact {
+    padding: 100px 0;
+
+    h2 {
+        text-align: center;
+        color: $secColor;
+        font-size: 32px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    input {
+        background-color: #F3F1F1;
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        width: 100%;
+        color: #707070;
+        padding: 12px 20px;
+        text-align: right;
+        outline: none;
+
+        &:focus {
+            box-shadow: 0 0 9px #fdc682;
+        }
+    }
+
+    textarea {
+        background-color: #F3F1F1;
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        width: 100%;
+        color: #707070;
+        padding: 12px 20px;
+        height: 200px;
+        resize: none;
+        outline: none;
+
+        &:focus {
+            box-shadow: 0 0 9px #fdc682;
+        }
+    }
+
+    button {
+        background: url('../images/bg/btn.png');
+        color: #fff;
+        background-position: center center;
+        background-size: cover;
+        border: none;
+        outline: none;
+        width: 250px;
+        height: 50px;
+        font-size: 18px;
+        font-weight: 600;
+        @extend .transition;
+        margin-top: 30px;
+
+    }
+
+}
+
+// end contact
+
+// start footer 
+footer {
+    background-color: #81499D;
+    padding: 40px 0;
+    color: #fff;
+    margin-top: 40px;
+
+    .footer-logo {
+        width: 100px;
+    }
+
+    a:hover {
+        color: unset;
+    }
+
+    ul {
+        a {
+            color: #fff;
+            text-decoration: none;
+            @extend .transition;
+
+            &:hover {
+                color: $secColor;
+            }
+
+            li {
+                margin-bottom: 30px;
+                font-size: 18px;
+            }
+
+
+        }
+
+    }
+
+    h3 {
+        color: $secColor;
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 0;
+    }
+
+    h4 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        a {
+            color: #fff;
+            font-size: 18px;
+        }
+    }
+
+    h5 {
+
+        a {
+            color: #fff;
+            font-size: 18px;
+        }
+    }
+
+}
+
+// end footer
+
+// animation
+
+@keyframes rotate-img {
+    0% {
+        transform: rotate(0deg);
+
+    }
+
+    25% {
+        transform: rotate(90deg);
+
+    }
+
+    50% {
+        transform: rotate(270deg);
+
+    }
+
+    100% {
+        transform: rotate(0deg);
+
+    }
+}
+
+img.anim {
+    transform: rotate(0deg);
+    animation-name: rotate-img;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+}
+// end animation
+
+// start internal
+.info-form {
+    height: 100vh;
+    background: url('../images/bg/big-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        text-align: right;
+        color: $mainColor;
+        font-size: 44px;
+        font-weight: 600;
+        margin-bottom: 50px;
+    }
+
+    h2 {
+        text-align: right;
+        color: $secColor;
+        font-size: 26px;
+        font-weight: 600;
+        margin-bottom: 50px;
+    }
+
+    input {
+        background-color: #F3F1F1;
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        width: 100%;
+        color: #707070;
+        padding: 12px 20px;
+        text-align: right;
+        outline: none;
+
+        &:focus {
+            box-shadow: 0 0 9px #fdc682;
+        }
+    }
+
+    button {
+        background: url('../images/bg/btn.png');
+        color: #fff;
+        background-position: center center;
+        background-size: cover;
+        border: none;
+        outline: none;
+        width: 250px;
+        height: 50px;
+        float: left;
+        font-size: 18px;
+        font-weight: 600;
+        @extend .transition;
+        margin-top: 30px;
+
+    }
+
+    .qr-box {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        h4 {
+            margin-bottom: 30px;
+            color: #707070;
+        }
+
+        img {
+            width: 120px;
+            height: 120px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        svg {
+            width: 120px;
+            height: 120px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+}
+
+.big-qr {
+    h2 {
+        text-align: center;
+    }
+
+    .qr-box {
+
+
+        img {
+            width: 200px;
+            height: 200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        svg {
+            width: 200px;
+            height: 200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+.order {
+    background: url('../images/bg/order-bg.png');
+    background-position: bottom center;
+    background-size: cover;
+    img.order-trin {
+        width: 200px;
+        margin-bottom: 40px;
+    }
+    p {
+        text-align: center;
+        width: 50%;
+    }
+    img.big-trin {
+        float: left;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 500px;
+    }
+    .tickets {
+        padding-bottom: 40px;
+    }
+}
+
+
+/* Responsive */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .navbar-dark .navbar-toggler {
+        border-color: $mainColor;
+    }
+
+    .navbar-dark .navbar-toggler-icon {
+        background-image: url(../images/bg/toggle.svg);
+    }
+
+    .intro nav button {
+        padding: 7px 15px;
+    }
+
+    .intro nav button:hover {
+        background: transparent;
+    }
+
+    .intro .navbar-expand-lg .navbar-nav .nav-link {
+        padding-left: 3rem;
+        padding-right: 10px;
+        margin-bottom: 15px;
+    }
+
+    .intro .carousel .carousel-item p {
+        width: 100%;
+    }
+
+    .intro .bg-one {
+        position: absolute;
+        left: -110%;
+        width: 700px;
+        top: 50px;
+        z-index: -1;
+    }
+
+    .intro .bg-two {
+        position: absolute;
+        right: -95%;
+        width: 600px;
+        top: 400px;
+        z-index: -1;
+    }
+
+    .intro .tickets {
+        padding-top: 20px;
+    }
+
+    .intro .tickets ul li {
+        margin-bottom: 15px;
+        margin-left: 0;
+        display: block;
+    }
+
+    .orgnize {
+        padding-top: 0px;
+    }
+
+    .orgnize img {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .easy {
+        padding-top: 40px;
+    }
+
+    footer {
+        margin-top: 0;
+    }
+
+    footer .footer-logo {
+        margin-bottom: 40px;
+    }
+
+    .control img {
+        margin-top: -125px;
+    }
+}
+
+/* galaxy S5 */
+@media only screen and (min-width: 359px) and (max-width: 361px) {}
+
+/* iphone x, 6/7/8 */
+@media only screen and (min-width: 375px) and (max-width: 380px) {}
+
+/* iphone 6/7/8 plus */
+@media only screen and (min-width: 410px) and (max-width: 416px) {}
+
+/* ipad */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .navbar-dark .navbar-toggler {
+        border-color: $mainColor;
+    }
+
+    .navbar-dark .navbar-toggler-icon {
+        background-image: url(../images/bg/toggle.svg);
+    }
+    .intro .bg-one {
+        position: absolute;
+        left: -57%;
+        width: 700px;
+        top: 100px;
+        z-index: -1;
+    }
+
+    .intro .bg-two {
+        position: absolute;
+        right: -50%;
+        width: 600px;
+        top: 600px;
+        z-index: -1;
+    }
+    .intro .carousel .carousel-indicators {
+        bottom: 40%;
+    }
+    .intro nav button {
+        padding: 7px 15px;
+    }
+
+    .intro nav button:hover {
+        background: transparent;
+    }
+
+    .intro .navbar-expand-lg .navbar-nav .nav-link {
+        padding-left: 3rem;
+        padding-right: 10px;
+        margin-bottom: 15px;
+    }
+    .intro .tickets ul li {
+        margin-left: 33px;
+        margin-bottom: 20px;
+    }
+    .intro .tickets {
+        padding-top: 70px;
+    }
+    .orgnize img {
+        margin-top: -55px;
+    }
+    .orgnize {
+        padding-top: 60px;
+    }
+    .control img {
+        margin-top: -55px;
+    }
+    .control {
+        padding-top: 60px;
+    }
+    .easy {
+        padding-top: 50px;
+    }
+    .contact {
+        padding-top: 40px;
+    }
+    footer h3 {
+        font-size: 18px;
+    
+    }
+}
+
+/* ipad pro  */
+@media only screen and (min-width: 1024px) and (max-width:1030px) {}
+
+/* 17 inch */
+@media only screen and (min-width: 1920px) and (max-width: 2500px) {
+    .intro .bg-one {
+        position: absolute;
+        left: -31%;
+        width: 900px;
+        top: 50px;
+        z-index: -1;
+    }
+
+    .intro .bg-two {
+        position: absolute;
+        right: -25%;
+        width: 700px;
+        top: 500px;
+        z-index: -1;
+    }
+
+    .intro .carousel {
+        height: 100vh;
+    }
+
+    .tickets {
+        margin-top: -100px;
+    }
+    .carousel-indicators {
+
+        bottom: 39% !important;
+
+    }
+}
