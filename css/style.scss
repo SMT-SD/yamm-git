@@ -551,6 +551,9 @@ footer {
 
 img.anim {
     transform: rotate(0deg);
+    @extend .transition;
+}
+img.anim:hover {
     animation-name: rotate-img;
     animation-duration: 4s;
     animation-iteration-count: infinite;

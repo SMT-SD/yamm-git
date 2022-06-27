@@ -71,7 +71,7 @@ a {
   padding: 60px 0;
 }
 
-.transition, .info-form button, footer ul a, .contact button, .intro .carousel .carousel-item button, .intro nav button, .intro nav .nav-link {
+.transition, .info-form button, img.anim, footer ul a, .contact button, .intro .carousel .carousel-item button, .intro nav button, .intro nav .nav-link {
   transition: all ease-in-out 0.3s;
 }
 
@@ -437,6 +437,9 @@ footer h5 a {
 }
 img.anim {
   transform: rotate(0deg);
+}
+
+img.anim:hover {
   -webkit-animation-name: rotate-img;
           animation-name: rotate-img;
   -webkit-animation-duration: 4s;
