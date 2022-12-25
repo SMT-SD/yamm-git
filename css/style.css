@@ -19,7 +19,6 @@ body {
   font-family: "Almarai", sans-serif;
   overflow-x: hidden;
   position: relative;
-  direction: rtl;
 }
 
 a {
@@ -163,7 +162,8 @@ a {
 }
 .intro .carousel .carousel-indicators {
   flex-direction: column;
-  margin-right: -30px;
+  -webkit-margin-start: -30px;
+          margin-inline-start: -30px;
   bottom: 36%;
 }
 .intro .carousel .carousel-indicators [data-bs-target] {
@@ -194,7 +194,8 @@ a {
   margin-top: 30px;
 }
 .intro .tickets ul li {
-  margin-left: 100px;
+  -webkit-margin-end: 100px;
+          margin-inline-end: 100px;
   font-size: 18px;
   color: #3B3B3D;
 }
@@ -204,7 +205,8 @@ a {
   height: 20px;
   display: inline-block;
   background: #CC299A;
-  margin-left: 10px;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
 }
 
 .orgnize {
@@ -226,7 +228,8 @@ a {
   margin-top: 40px;
 }
 .orgnize ul li {
-  margin-left: 100px;
+  -webkit-margin-end: 100px;
+          margin-inline-end: 100px;
   font-size: 18px;
   color: #3B3B3D;
   margin-bottom: 15px;
@@ -238,7 +241,8 @@ a {
   height: 20px;
   display: inline-block;
   background: #CC299A;
-  margin-left: 10px;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
 }
 .orgnize img {
   margin-top: -200px;
@@ -263,7 +267,8 @@ a {
   margin-top: 40px;
 }
 .control ul li {
-  margin-left: 100px;
+  -webkit-margin-end: 100px;
+          margin-inline-end: 100px;
   font-size: 18px;
   color: #3B3B3D;
   margin-bottom: 15px;
@@ -275,7 +280,8 @@ a {
   height: 20px;
   display: inline-block;
   background: #CC299A;
-  margin-left: 10px;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
 }
 .control img {
   margin-top: -230px;
@@ -294,7 +300,8 @@ a {
   margin-top: 40px;
 }
 .easy ul li {
-  margin-left: 100px;
+  -webkit-margin-end: 100px;
+          margin-inline-end: 100px;
   font-size: 18px;
   color: #3B3B3D;
   margin-bottom: 15px;
@@ -307,7 +314,8 @@ a {
   height: 20px;
   display: inline-block;
   background: #CC299A;
-  margin-left: 10px;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
 }
 
 .contact {
@@ -575,29 +583,23 @@ span.val {
   .navbar-dark .navbar-toggler {
     border-color: #CC299A;
   }
-
   .navbar-dark .navbar-toggler-icon {
     background-image: url(../images/bg/toggle.svg);
   }
-
   .intro nav button {
     padding: 7px 15px;
   }
-
   .intro nav button:hover {
     background: transparent;
   }
-
   .intro .navbar-expand-lg .navbar-nav .nav-link {
     padding-left: 3rem;
     padding-right: 10px;
     margin-bottom: 15px;
   }
-
   .intro .carousel .carousel-item p {
     width: 100%;
   }
-
   .intro .bg-one {
     position: absolute;
     left: -110%;
@@ -605,7 +607,6 @@ span.val {
     top: 50px;
     z-index: -1;
   }
-
   .intro .bg-two {
     position: absolute;
     right: -95%;
@@ -613,38 +614,30 @@ span.val {
     top: 400px;
     z-index: -1;
   }
-
   .intro .tickets {
     padding-top: 20px;
   }
-
   .intro .tickets ul li {
     margin-bottom: 15px;
     margin-left: 0;
     display: block;
   }
-
   .orgnize {
     padding-top: 0px;
   }
-
   .orgnize img {
     margin-top: 10px;
     margin-bottom: 20px;
   }
-
   .easy {
     padding-top: 40px;
   }
-
   footer {
     margin-top: 0;
   }
-
   footer .footer-logo {
     margin-bottom: 40px;
   }
-
   .control img {
     margin-top: -125px;
   }
@@ -657,11 +650,9 @@ span.val {
   .navbar-dark .navbar-toggler {
     border-color: #CC299A;
   }
-
   .navbar-dark .navbar-toggler-icon {
     background-image: url(../images/bg/toggle.svg);
   }
-
   .intro .bg-one {
     position: absolute;
     left: -57%;
@@ -669,7 +660,6 @@ span.val {
     top: 100px;
     z-index: -1;
   }
-
   .intro .bg-two {
     position: absolute;
     right: -50%;
@@ -677,58 +667,45 @@ span.val {
     top: 600px;
     z-index: -1;
   }
-
   .intro .carousel .carousel-indicators {
     bottom: 40%;
   }
-
   .intro nav button {
     padding: 7px 15px;
   }
-
   .intro nav button:hover {
     background: transparent;
   }
-
   .intro .navbar-expand-lg .navbar-nav .nav-link {
     padding-left: 3rem;
     padding-right: 10px;
     margin-bottom: 15px;
   }
-
   .intro .tickets ul li {
     margin-left: 33px;
     margin-bottom: 20px;
   }
-
   .intro .tickets {
     padding-top: 70px;
   }
-
   .orgnize img {
     margin-top: -55px;
   }
-
   .orgnize {
     padding-top: 60px;
   }
-
   .control img {
     margin-top: -55px;
   }
-
   .control {
     padding-top: 60px;
   }
-
   .easy {
     padding-top: 50px;
   }
-
   .contact {
     padding-top: 40px;
   }
-
   footer h3 {
     font-size: 18px;
   }
@@ -743,7 +720,6 @@ span.val {
     top: 50px;
     z-index: -1;
   }
-
   .intro .bg-two {
     position: absolute;
     right: -25%;
@@ -751,15 +727,12 @@ span.val {
     top: 500px;
     z-index: -1;
   }
-
   .intro .carousel {
     height: 100vh;
   }
-
   .tickets {
     margin-top: -100px;
   }
-
   .carousel-indicators {
     bottom: 39% !important;
   }

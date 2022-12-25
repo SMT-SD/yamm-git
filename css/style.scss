@@ -24,7 +24,6 @@ body {
     font-family: 'Almarai', sans-serif;
     overflow-x: hidden;
     position: relative;
-    direction: rtl;
 }
 
 a {
@@ -197,7 +196,7 @@ $thirdColor: #81499D;
 
         .carousel-indicators {
             flex-direction: column;
-            margin-right: -30px;
+            margin-inline-start: -30px;
             bottom: 36%;
 
         }
@@ -237,7 +236,7 @@ $thirdColor: #81499D;
             margin-top: 30px;
 
             li {
-                margin-left: 100px;
+                margin-inline-end: 100px;
                 font-size: 18px;
                 color: #3B3B3D;
 
@@ -247,7 +246,7 @@ $thirdColor: #81499D;
                     height: 20px;
                     display: inline-block;
                     background: $mainColor;
-                    margin-left: 10px;
+                    margin-inline-end: 10px;
                 }
             }
 
@@ -281,7 +280,7 @@ $thirdColor: #81499D;
         margin-top: 40px;
 
         li {
-            margin-left: 100px;
+            margin-inline-end: 100px;
             font-size: 18px;
             color: #3B3B3D;
             margin-bottom: 15px;
@@ -293,7 +292,7 @@ $thirdColor: #81499D;
                 height: 20px;
                 display: inline-block;
                 background: $mainColor;
-                margin-left: 10px;
+                margin-inline-end: 10px;
             }
         }
 
@@ -330,7 +329,7 @@ $thirdColor: #81499D;
         margin-top: 40px;
 
         li {
-            margin-left: 100px;
+            margin-inline-end: 100px;
             font-size: 18px;
             color: #3B3B3D;
             margin-bottom: 15px;
@@ -342,7 +341,7 @@ $thirdColor: #81499D;
                 height: 20px;
                 display: inline-block;
                 background: $mainColor;
-                margin-left: 10px;
+                margin-inline-end: 10px;
             }
         }
 
@@ -371,7 +370,7 @@ $thirdColor: #81499D;
         margin-top: 40px;
 
         li {
-            margin-left: 100px;
+            margin-inline-end: 100px;
             font-size: 18px;
             color: #3B3B3D;
             margin-bottom: 15px;
@@ -384,7 +383,7 @@ $thirdColor: #81499D;
                 height: 20px;
                 display: inline-block;
                 background: $mainColor;
-                margin-left: 10px;
+                margin-inline-end: 10px;
             }
         }
 
