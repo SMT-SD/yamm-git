@@ -552,12 +552,14 @@ img.anim {
     transform: rotate(0deg);
     @extend .transition;
 }
+
 img.anim:hover {
     animation-name: rotate-img;
     animation-duration: 4s;
     animation-iteration-count: infinite;
 
 }
+
 span.val {
     display: block;
     color: #f00;
@@ -565,6 +567,7 @@ span.val {
     margin-bottom: 10px;
     font-size: 16px;
 }
+
 // end animation
 
 // start internal
@@ -627,6 +630,31 @@ span.val {
 
     }
 
+    select {
+        background-color: #F3F1F1;
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        width: 100%;
+        color: #707070;
+        padding: 12px 20px;
+        height: 48px;
+        text-align: right;
+        outline: none;
+    }
+
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+
     .qr-box {
         text-align: center;
         margin-top: 10px;
@@ -682,20 +710,24 @@ span.val {
     background: url('../images/bg/order-bg.png');
     background-position: bottom center;
     background-size: cover;
+
     img.order-trin {
         width: 200px;
         margin-bottom: 40px;
     }
+
     p {
         text-align: center;
         width: 50%;
     }
+
     img.big-trin {
         float: left;
         margin-top: 50px;
         margin-bottom: 50px;
         width: 500px;
     }
+
     .tickets {
         padding-bottom: 40px;
     }
@@ -801,6 +833,7 @@ span.val {
     .navbar-dark .navbar-toggler-icon {
         background-image: url(../images/bg/toggle.svg);
     }
+
     .intro .bg-one {
         position: absolute;
         left: -57%;
@@ -816,9 +849,11 @@ span.val {
         top: 600px;
         z-index: -1;
     }
+
     .intro .carousel .carousel-indicators {
         bottom: 40%;
     }
+
     .intro nav button {
         padding: 7px 15px;
     }
@@ -832,34 +867,43 @@ span.val {
         padding-right: 10px;
         margin-bottom: 15px;
     }
+
     .intro .tickets ul li {
         margin-left: 33px;
         margin-bottom: 20px;
     }
+
     .intro .tickets {
         padding-top: 70px;
     }
+
     .orgnize img {
         margin-top: -55px;
     }
+
     .orgnize {
         padding-top: 60px;
     }
+
     .control img {
         margin-top: -55px;
     }
+
     .control {
         padding-top: 60px;
     }
+
     .easy {
         padding-top: 50px;
     }
+
     .contact {
         padding-top: 40px;
     }
+
     footer h3 {
         font-size: 18px;
-    
+
     }
 }
 
@@ -891,6 +935,7 @@ span.val {
     .tickets {
         margin-top: -100px;
     }
+
     .carousel-indicators {
 
         bottom: 39% !important;

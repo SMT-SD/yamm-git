@@ -473,6 +473,8 @@ span.val {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* Chrome, Safari, Edge, Opera */
+  /* Firefox */
 }
 .info-form h1 {
   text-align: right;
@@ -515,6 +517,26 @@ span.val {
   font-size: 18px;
   font-weight: 600;
   margin-top: 30px;
+}
+.info-form select {
+  background-color: #F3F1F1;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  color: #707070;
+  padding: 12px 20px;
+  height: 48px;
+  text-align: right;
+  outline: none;
+}
+.info-form input::-webkit-outer-spin-button,
+.info-form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.info-form input[type=number] {
+  -moz-appearance: textfield;
 }
 .info-form .qr-box {
   text-align: center;
